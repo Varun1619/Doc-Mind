@@ -5,10 +5,9 @@ import { useTheme } from '../lib/ThemeContext.jsx'
 import { Button } from './ui/Button.jsx'
 
 const NAV_LINKS = [
-  { label: 'Features',     id: 'features'      },
-  { label: 'How it Works', id: 'how-it-works'  },
-  { label: 'Stack',        id: 'stack'         },
-  { label: 'FAQ',          id: 'faq'           },
+  { label: 'Features',     id: 'features'     },
+  { label: 'How it Works', id: 'how-it-works' },
+  { label: 'FAQ',          id: 'faq'          },
 ]
 
 export default function Navbar() {
@@ -40,7 +39,7 @@ export default function Navbar() {
         borderBottom:  scrolled ? `1px solid ${t.border}` : '1px solid transparent',
         transition: 'all 0.3s',
       }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto', padding: '0 20px', height: 62, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ width: '100%', padding: '0 20px', height: 62, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
           {/* Logo */}
           <div
